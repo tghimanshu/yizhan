@@ -1,16 +1,55 @@
+/*
+ * File: css/latest_exhibition.css
+ * Purpose: Styles for the Latest Exhibition listing page (latest_exhibition.html).
+ * Description: Defines the grid layout for displaying multiple exhibition items,
+ *              including thumbnail images and text details.
+ */
+
+/*
+ * Selector: .banner
+ * Purpose: Styles the main banner container.
+ */
 .banner{width: 100%;height: 600px;overflow: hidden;position: relative;}
 .banner img{position: absolute;top:0;left:50%;margin-left: -960px;}
 
+/*
+ * Selector: .product
+ * Purpose: Main container for the exhibition grid.
+ */
 .product{width: 1170px;min-height:850px;margin: 0 auto;}
 .product h2{font-size: 36px;color: #111111;text-align: center;line-height: 58px;margin-top: 70px;}
 .product h2 i{color: #EBC829;}
 .product h6{display:block;text-align: center;color: #000;font-size: 14px;padding-bottom: 50px;font-weight: normal;}
+
+/*
+ * Selector: .product ul
+ * Purpose: Grid container with negative margin for spacing adjustment.
+ */
 .product ul{margin-right: -30px;}
+
+/*
+ * Selector: .product ul li
+ * Purpose: Individual grid item for an exhibition.
+ */
 .product ul li{float: left;margin-right:30px;margin-bottom: 30px; width: 270px;}
-/*.product ul li img{width: 270px;}*/
+
+/*
+ * Selector: .product ul li h3
+ * Purpose: Styles the exhibition title within the grid item.
+ */
 .product ul li h3{font-weight: normal;font-size: 14px;line-height: 28px;}
 .product ul li h3 a{color: #111111;}
 .product ul li h3 a:hover{color:#2361B5;text-decoration: underline;}
+
+/*
+ * Selector: .product ul li p
+ * Purpose: Styles the exhibition details (location, date).
+ */
 .product ul li p{font-size: 12px;color: #111111;}
 .product ul li p em{font-style: normal;display: block;}
+
+/*
+ * Selector: .product h4
+ * Purpose: Styles the footer note or 'view more' hint.
+ */
 .product h4 {font-weight: normal;font-size: 18px;color: black;text-align: center;margin-bottom: 50px;}

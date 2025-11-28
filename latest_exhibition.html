@@ -1,13 +1,21 @@
+<!--
+    File: latest_exhibition.html
+    Purpose: The 'Latest Exhibition' listing page.
+    Description: This page provides a comprehensive list of all current and upcoming art exhibitions.
+                 It displays exhibition thumbnails, titles, locations, and dates in a grid layout.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>最新展览</title>
+    <!-- CSS Dependencies -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/latest_exhibition.css">
 </head>
 <body>
+    <!-- Header Section: Contains Logo, Navigation, and Search Bar -->
     <div class="header">
         <h1><a href="index.html"><img src="images/logo.jpg"></a></h1>
         <ul>
@@ -22,9 +30,13 @@
             <button class="btn"><span class="icon-czsearch"></span></button>
         </div>
     </div>
+
+    <!-- Banner Section: Main visual banner for the page -->
     <div class="banner">
         <img src="images/banner.jpg" alt="">
     </div>
+
+    <!-- Exhibition List Section: Grid of exhibitions -->
     <div class="product">
         <h2><i>LATEST</i>/EXHIBITION</h2>
         <h6>最新展览</h6>
@@ -33,6 +45,7 @@
             <a href="latest_exhibition.html">最新展览</a>
         </div>
         <ul class="cl">
+            <!-- Exhibition Item -->
             <li><img src="images/latest01.jpg" alt="">
                 <h3><a href="exhibition_details.html">香料：谢南星个展</a></h3>
                 <P><em>尤伦斯当代艺术中心（UCCA）</em>2018.03.17-05.27</P>
@@ -124,6 +137,8 @@
         </ul>
         <h4>更多内容请登录一展APP查看~</h4>
     </div>
+
+    <!-- Footer Menu: Links for help, jobs, service, and contact -->
     <div class="footer_menu">
         <div class="fm_content">
             <dl>
@@ -159,6 +174,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer Copy: Copyright and license information -->
     <div class="footer_copy">
         <span>Copyright Reserved 2000-2018 一展艺术网 版权所有</span>
         <p>网络文化经营许可证粤网文［2015］1282-139号网络出版服务许可证（总）网出证（粤）字第021号出版物经营许可证可信网站</p>

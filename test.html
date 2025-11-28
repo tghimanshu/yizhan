@@ -1,3 +1,10 @@
+<!--
+    File: test.html
+    Purpose: A test page for experimenting with layout or components.
+    Description: This file appears to be a sandbox for testing CSS positioning, borders,
+                 and pseudo-elements (`:before`, `:after`) to create specific box designs.
+                 It is not part of the main site navigation.
+-->
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,17 +13,28 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- Internal CSS for testing layout concepts -->
     <style>
+        /* Reset margins and padding */
         *{margin: 0;padding: 0}
+
+        /* Main container box with specific dimensions and borders */
         .box{width: 1110px;height: 530px;margin: 100px auto 0;border: black solid 3px;position: relative;text-align: center}
+
+        /* Pseudo-element to create an overlay or border effect */
         .box:before{content: "";display: inline-block; width: 830px;height: 530px;border: white solid 3px;position: absolute;top: -3px;left: 50%;margin-left: -415px;z-index: 1}
+
+        /* Pseudo-element for another layer of border/overlay */
         .box:after{content: "";display: inline-block; width:1110px;height: 260px;border: white solid 3px;position: absolute;top: 50%;left:-3px ;
             margin-top:-130px;z-index: 1}
+
+        /* Spans used for additional decorative borders extending outside the box */
         .box span:nth-child(1){display: inline-block;width: 1170px;height: 530px;border-top: black solid 3px;border-bottom: black solid 3px; position:absolute;left: -30px;top:-3px; z-index: -99}
         .box span:nth-child(2){display: inline-block;width: 1110px;height: 600px;border-left: black solid 3px;border-right: black solid 3px; position:absolute;top: -35px;left: -3px; z-index: -99}
     </style>
 </head>
 <body>
+    <!-- Test Element -->
     <div class="box">
         <span></span>
         <span></span>

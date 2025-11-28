@@ -1,13 +1,22 @@
+<!--
+  File: index.html
+  Purpose: The homepage of the Art Exhibition Website.
+  Description: This page serves as the main entry point. It displays the latest exhibitions,
+               featured artists, news highlights, and an 'About Us' section.
+               It includes a navigation header and a footer with links.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>首页</title>
+    <!-- CSS Dependencies -->
     <link rel="stylesheet" href="css/base.css"/>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Header Section: Contains Logo, Navigation, and Search Bar -->
     <div class="header">
         <h1><a href="index.html"><img src="images/logo.jpg"></a></h1>
         <ul>
@@ -22,41 +31,53 @@
             <button class="btn"><span class="icon-czsearch"></span></button>
         </div>
     </div>
+
+    <!-- Banner Section: Main visual banner for the page -->
     <div class="banner">
         <img src="images/banner.jpg" alt="">
     </div>
+
+    <!-- Products/Exhibitions Section: Displays a grid of latest exhibitions -->
     <div class="product">
         <h2><i>LATEST</i>/EXHIBITION</h2>
         <span>最新展览</span>
         <ul class="cl">
+            <!-- Exhibition Item 1 -->
             <li><img src="images/latest01.jpg" alt="">
                 <h3><a href="#">香料：谢南星个展</a></h3>
                 <P><em>尤伦斯当代艺术中心（UCCA）</em>2018.03.17-05.27</P>
             </li>
+            <!-- Exhibition Item 2 -->
             <li><img src="images/latest02.jpg" alt="">
                 <h3><a href="#">超越记忆的永恒——达利版画作品展</a></h3>
                 <P><em>杜若云章画廊</em>2018.03.07-04.15</P>
             </li>
+            <!-- Exhibition Item 3 -->
             <li><img src="images/latest03.jpg" alt="">
                 <h3><a href="#">寄黑 藏白 醉粉红——常玉特展</a></h3>
                 <P><em>台北大未来林舍画廊</em>2018.05.05-06.03</P>
             </li>
+            <!-- Exhibition Item 4 -->
             <li><img src="images/latest04.jpg" alt="">
                 <h3><a href="#">藏枒入华：常玉与浪荡子美学</a></h3>
                 <P><em>耿画廊</em>2018.03.24-04.29</P>
             </li>
+            <!-- Exhibition Item 5 -->
             <li><img src="images/latest05.jpg" alt="">
                 <h3><a href="#">他方与此方——罗中立写生作品展</a></h3>
                 <P><em>山艺术－北京林正艺术空间</em>2018.04.07-05.13</P>
             </li>
+            <!-- Exhibition Item 6 -->
             <li><img src="images/latest06.jpg" alt="">
                 <h3><a href="#">写嵩：马可鲁&尹朝阳</a></h3>
                 <P><em>亦安画廊</em>2018.04.30-05.30</P>
             </li>
+            <!-- Exhibition Item 7 -->
             <li><img src="images/latest07.jpg" alt="">
                 <h3><a href="#">KAWS个展</a></h3>
                 <P><em>贝浩登画廊 (香港)</em>2018.03.26-05.19</P>
             </li>
+            <!-- Exhibition Item 8 -->
             <li><img src="images/latest08.jpg" alt="">
                 <h3><a href="#">凿冰——龚辰宇个展</a></h3>
                 <P><em>蜂巢当代艺术中心</em>2018.04.22-05.28</P>
@@ -66,6 +87,8 @@
             <a href="latest_exhibition.html">More</a>
         </div>
     </div>
+
+    <!-- Featured Artists Section: Displays selected artists -->
     <div class="person">
         <h2>ARTIST</h2>
         <span>艺术家</span>
@@ -99,6 +122,8 @@
             <a href="artist.html">More</a>
         </div>
     </div>
+
+    <!-- News Section: Displays latest news highlights -->
     <div class="news">
         <h2><i>NEWS</i>/CENTER</h2>
         <span>新闻中心</span>
@@ -129,6 +154,8 @@
             <a href="news.html">More</a>
         </div>
     </div>
+
+    <!-- About Section: Brief introduction to the organization -->
     <div class="about">
         <h2><i>About</i>/REAL/ART</h2>
         <span>关于我们</span>
@@ -154,6 +181,8 @@
         </div>
 
     </div>
+
+    <!-- Footer Menu: Links for help, jobs, service, and contact -->
     <div class="footer_menu">
         <div class="fm_content">
             <dl>
@@ -189,6 +218,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer Copy: Copyright and license information -->
     <div class="footer_copy">
         <span>Copyright Reserved 2000-2018 一展艺术网 版权所有</span>
         <p>网络文化经营许可证粤网文［2015］1282-139号网络出版服务许可证（总）网出证（粤）字第021号出版物经营许可证可信网站</p>
