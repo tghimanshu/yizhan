@@ -1,30 +1,112 @@
+/*
+ * File: css/base.css
+ * Purpose: Defines the base styles and common structural elements for the website.
+ * Description: This stylesheet handles global resets, typography defaults, and
+ *              layout for common components like the Header, Footer, and Navigation.
+ */
+
+/*
+ * Selector: *
+ * Purpose: Global reset to remove default margin and padding from all elements.
+ */
 *{ margin: 0; padding: 0;}
+
+/*
+ * Selector: li
+ * Purpose: Removes default list styling (bullet points).
+ */
 li{ list-style: none;}
+
+/*
+ * Selector: a
+ * Purpose: Removes text decoration (underline) from links.
+ */
 a{ text-decoration: none;}
+
+/*
+ * Selector: img
+ * Purpose: Removes borders and sets display to block to prevent inline spacing issues.
+ */
 img{ border:none; display: block;}
+
+/*
+ * Selector: :focus
+ * Purpose: Removes the default outline on focused elements.
+ */
 :focus{ outline: none;}
+
+/*
+ * Selector: i, em
+ * Purpose: Resets font style to normal (removes italics) for `i` and `em` tags.
+ */
 i{ font-style: normal;}
 em{font-style: normal;}
+
+/*
+ * Selector: .cl
+ * Purpose: Clearfix utility class to clear floats.
+ */
 .cl:after{content: "";display: block;clear: both; height: 0;overflow: hidden;visibility: hidden;}
+
+/*
+ * Selector: .nav
+ * Purpose: Styles for the breadcrumb or secondary navigation bar.
+ */
 .nav{text-align: right;font-size: 12px;width: 1170px;margin: 0 auto;}
 .nav a{color: black;}
 .nav a:hover{color: #D74B19;}
 
-
+/*
+ * Selector: .header
+ * Purpose: Container for the top navigation header.
+ */
 .header{width: 1170px;height: 100px;margin: 0 auto;}
+
+/*
+ * Selector: .header h1
+ * Purpose: Styles the logo within the header.
+ */
 .header h1{float: left; margin-left: 40px;margin-top: 25px;}
+
+/*
+ * Selector: .header ul
+ * Purpose: Container for the main navigation links.
+ */
 .header ul{float: left;margin-left: 50px;}
+
+/*
+ * Selector: .header ul li
+ * Purpose: Styles individual navigation list items.
+ */
 .header ul li{float: left;font-size: 24px;line-height: 100px;margin: 0 15px;}
 .header ul li a{color: #656565;}
 .header ul li a.current{color: #D74B19;}
 .header ul li:hover a{color: #D74B19;}
+
+/*
+ * Selector: .header .search
+ * Purpose: Container for the search bar in the header.
+ */
 .header .search{width: 231px;height: 35px;float: right;padding-left: 10px;border: #bbbbbb solid 1px;margin-right: 65px;margin-top: 30px;}
 .header .search .txt{border: none;width: 195px;height: 35px;line-height: 35px;float: left;}
 .header .search .btn{width: 35px;height: 35px;border: none;color: #e4e4e4;font-size: 24px;line-height: 35px;background-color: white;cursor: pointer;}
 
-
+/*
+ * Selector: .footer_menu
+ * Purpose: Styling for the footer menu section containing links.
+ */
 .footer_menu{width: 100%;height: 270px;background: #C8C8C8;}
+
+/*
+ * Selector: .fm_content
+ * Purpose: Inner content container for the footer menu.
+ */
 .fm_content{width: 1170px;height: 200px;padding-top:70px;margin: 0 auto;}
+
+/*
+ * Selector: .fm_content dl
+ * Purpose: Description lists within the footer for grouping links.
+ */
 .fm_content dl{float: left;margin-left: 100px;}
 .fm_content dl dt{font-size: 18px;line-height: 18px;margin-bottom: 25px;color: #ffffff;}
 .fm_content dl dd{font-size: 14px;line-height: 14px;margin-bottom: 15px;}
@@ -32,4 +114,8 @@ em{font-style: normal;}
 .fm_content dl dd a:hover{color: #D74B19;}
 .fm_content .code{float: right;padding-right: 15px;}
 
+/*
+ * Selector: .footer_copy
+ * Purpose: Styling for the bottom copyright bar.
+ */
 .footer_copy{width: 100%;height: 60px;background: #000000;font-size: 12px;text-align: center;color: white;line-height: 30px;}

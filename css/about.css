@@ -1,23 +1,60 @@
+/*
+ * File: css/about.css
+ * Purpose: Styles for the 'About Us' page (about.html).
+ * Description: Contains specific styles for the about page sections including
+ *              Mission, DNA, and Products/Services.
+ */
+
+/*
+ * Selector: .banner
+ * Purpose: Styles the main banner container.
+ */
 .banner{width: 100%;height: 600px;overflow: hidden;position: relative;}
 .banner img{position: absolute;top:0;left:50%;margin-left: -960px;}
+
+/*
+ * Selector: .main
+ * Purpose: Main content container for the about section.
+ */
 .main{width: 1170px;min-height: 500px;margin: 0 auto;padding: 80px 0 0;}
 .main h1{font-weight: normal;text-align: center;margin-bottom: 30px;font-size: 36px;}
 .main h1 em{display: block}
 .main h1 i{font-size: 36px;color: #ebc929;}
 .main h1 span{ font-size: 14px;line-height: 14px;padding: 14px;position: relative;}
+
+/*
+ * Selector: .main h1 span:before, .main h1 span:after
+ * Purpose: Decorative lines next to the subheading.
+ */
 .main h1 span:before{content: "";display:inline-block;width: 50px;height: 0;border-bottom: #c1c1c1 solid 2px;position: absolute;top: 23px;left:-50px;}
 .main h1 span:after{content: "";display:inline-block;width: 50px;height: 0;border-bottom: #c1c1c1 solid 2px;position: absolute;top: 23px;right:-50px;}
+
 .main ul{padding: 180px 0;}
 .main ul li{text-align: center;font-size: 18px;color: #656565;line-height: 27px;margin-bottom: 10px;}
 .main ul li span{display:block;font-size: 30px;color: #333333;margin-bottom: 30px;}
+
+/*
+ * Selector: .photo
+ * Purpose: Full-width photo section with overlay text.
+ */
 .photo{width: 100%;height: 645px;overflow: hidden;position: relative;text-align: center}
 .photo img{position: absolute;top:0;left: 50%;margin-left: -960px;}
 .photo span{width:700px;height:50px;position: absolute;top: 0;right: 0;bottom: 0;left: 0;margin: auto;z-index: 99;font-size: 24px;color: white;line-height: 25px;}
 
+/*
+ * Selector: .mission
+ * Purpose: Styles for the Mission statement section.
+ */
 .mission{width: 1170px;min-height: 500px;margin: 0 auto;padding-top: 360px;}
 .mission h1{font-weight: normal;text-align: center;}
 .mission h1 i{font-size: 36px;color: #ebc929;display: block}
 .mission h1 span{ font-size: 14px;line-height: 14px;}
+
+/*
+ * Selector: .box
+ * Purpose: Styles a decorative box container within the mission section.
+ *          Uses complex pseudo-elements for a specific border effect.
+ */
 .box{width: 1110px;height: 530px;margin: 100px auto 0;border: black solid 3px;position: relative;text-align: center}
 .box:before{content: "";display: inline-block; width: 830px;height: 530px;border: white solid 3px;position: absolute;top: -3px;left: 50%;margin-left: -415px;z-index: 1}
 .box:after{content: "";display: inline-block; width:1110px;height: 260px;border: white solid 3px;position: absolute;top: 50%;left:-3px ;
@@ -26,6 +63,11 @@
 .box span:nth-child(2){display: inline-block;width: 1110px;height: 600px;border-left: black solid 3px;border-right: black solid 3px; position:absolute;top: -35px;left: -3px; z-index: -99}
 .box p{font-size: 24px;color: #656565;margin: 20px 0 25px}
 .box img{width: 323px;height: 323px;border-radius: 50%;display:inline-block;}
+
+/*
+ * Selector: .dan
+ * Purpose: Styles for the DNA/Values section.
+ */
 .dan{width: 100%;height: 880px;margin-top:100px;position: relative;overflow: hidden;}
 .dan .pic img{position: absolute;left: 50%;top:0;margin-left: -960px;}
 .dan h1{font-weight: normal;text-align: center;width: 100%;height: auto;position: absolute;top:200px;}
@@ -37,6 +79,10 @@
 .dan ul li img{display:inline-block;}
 .dan ul li span{display: block;font-size: 18px;color: white;margin-top: 30px;}
 
+/*
+ * Selector: .product
+ * Purpose: Styles for the products and services section.
+ */
 .product{width: 1170px;height: auto;margin: 100px auto 0;padding-bottom: 100px;}
 .product>h2{font-weight: normal;text-align: center;}
 .product>h2 i{font-size: 36px;color:#ebc929;display: block; }
@@ -44,4 +90,3 @@
 .product .pic{width:100%; text-align: center;margin: 100px 0;}
 .product .pic img{display: inline-block;}
 .product em{display: inline-block;width: 50%;float: left;text-align: center}
-

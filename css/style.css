@@ -1,3 +1,14 @@
+/*
+ * File: css/style.css
+ * Purpose: Defines custom icon font mappings.
+ * Description: This stylesheet handles the import of the 'icomoon' font family and maps
+ *              CSS classes (prefixed with .icon-cz) to specific icon characters.
+ */
+
+/*
+ * Selector: @font-face
+ * Purpose: Imports the 'icomoon' font files (EOT, TTF, WOFF, SVG).
+ */
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?nkzd3f');
@@ -9,6 +20,11 @@
   font-style: normal;
 }
 
+/*
+ * Selector: [class^="icon-cz"], [class*=" icon-cz"]
+ * Purpose: Base styles for all icon classes. Sets font-family to 'icomoon',
+ *          normalizes font styles, and enables font smoothing.
+ */
 [class^="icon-cz"], [class*=" icon-cz"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -23,6 +39,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/*
+ * The following selectors map specific classes to their corresponding character codes in the font.
+ */
 
 .icon-czconnection:before {
   content: "\e91b";
